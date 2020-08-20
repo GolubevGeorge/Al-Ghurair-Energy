@@ -4,14 +4,53 @@
   <meta charset="utf-8">
   <title>Al Ghurair Energy</title>
   <style>
-  body { background: url(https://github.com/GolubevGeorge/al-ghurair-energy/blob/master/Image.jpg?raw=true);
+  body {
     background-repeat: no-repeat;
-    height: 300vh;
+   color: black;
+    align:center;
+    }
+    div{
+       color: black;
+      border:red;
+    }
+    div.main_text{
+      text-align: justify;
+      width: 60%;
+      padding-left:55pt;
+       color:#625c66;
+      font-size:25pt;
+    }
+    h1{
+       padding: 5px; 
+       margin-left: 70px;
+       margin-bottom: 5px;
+       margin-top: 30px;
+      font-size: 50px;
+      color:#625c66;
+    }
+    div.logo{
+      padding:15pt;
+    }
+    div.fill{
+      text-align :center;
     }
 </style>
  </head>
  <body>
- </body>
+   <div class="logo">
+  <img src="https://www.al-ghurair.com/images/ag-logo.png" alt="logo">
+     </div>
+    <h1>Al Ghurair Energy</h1>
+   <br>
+   <div class="main_text">
+  <p>In a marketplace where commodities are growing ever-more interrelated, Al Ghurair Energy coordinates an extensive marketing and trading network.
+ We are active and trusted partners within the energy trading and refining & petrochemicals sectors with capabilities for developing joint venture initiatives.
+   Our scope also includes investment and upgradationh2 of our refinery and energy trading practice across multiple regions.</p>
+     </div>
+   <div class="fill">
+    <img src="https://www.al-ghurair.com/images/energy-banner.png" alt="fill">
+ </div>
+     </body>
   <script>
   window.senderCallback = function() {
     SenderWidget.init({
@@ -20,12 +59,14 @@
   }
 </script>
 <script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
+  (function(d, s, id, companyId) {
+    var js, sjs = d.getElementsByTagName(s)[0];
     js = d.createElement(s);
     js.id = id;
-    js.src = "https://widget.sender.mobi/build/init.js";
-    fjs.parentNode.insertBefore(js, fjs, 'sender-widget');
-  })(document, 'script');
+    js.src = "https://widget.sender.mobi/connect/loader.js";
+    js.setAttribute('data-company-id', companyId);
+    sjs.parentNode.insertBefore(js, sjs);
+  })(document, "script", "sender-connect", "i304358315");
+</script>
 </script>
 </html>
